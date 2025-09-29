@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        div{
-            background-color: lightblue;
-            margin: 20px;
-            padding: 20px;
-        }
+      div {
+        background-color: lightblue;
+        margin: 20px;
+        padding: 20px;
+      }
     </style>
   </head>
   <body>
     <div>Hello World!</div>
+    <script>
+      const div = document.querySelector("div");
+      div.addEventListener('click',()=>{
+        div.innerText = 'Hello JS'
+      })
+    </script>
   </body>
 </html>
